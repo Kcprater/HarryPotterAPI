@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel='stylesheet' ref='text/css' href='main.css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Harry Potter</title>
+</head>
+
+<body>
+
+  <div id="divHouse" class="col-12">
+    <div id='divSortingHat'>
+      <div class=>
+        <img id='sortingHat' src="./assets/sortingHat.jpg">
+        <img>
+      </div>
+    </div>
+
+    <div>
+      <p>'A thousand years or more ago,
+        When I was newly sewn,
+        There lived four wizards of renown,
+        Whose name are still well-known:
+        Bold Gryffindor from wild moor,
+        Fair Ravlenclaw from glen,
+        Sweet Hufflepuff from valley broad,
+        Shrewd Slytherin from fen.
+        They share a wish, a hope, a dream,
+        They hatched a daring plan,
+        To educate young sorcerers,
+        Thus Hogwarts school began.
+        Now each of these four founders
+        Formed their own house, for each
+        Did value different virtues,
+        In the ones they had to teach.
+        By Gryffindor, the bravest were
+        Prized far beyond the rest;
+        For Ravenclaw, the cleverest
+        Would always be the best;
+        For Hufflepuff, hardworkers were
+        Most worthy of admission;
+        And power-hungry Slytherin
+        Loved those of great ambition.
+        While still alive they did divide
+        Their favourates from the throng,
+        Yet how to pick the worthy ones
+        When they were dead and gone?
+        'Twas Gryffindor who found the way,
+        He whipped me off his head
+        The founders put some brains in me
+        So I could choose instead!
+        Now slip me snug around your ears,
+        I've never yet been wrong,
+        I'll have alook inside your mind
+        And tell where you belong!'</p>
+      <label for='search'></label>
+    </div>
+    <div>
+      <h4>Tell me your name to find out to what house you belong!</h4>
+      <input class='col-3' type='text' class='form-control' id='nameSearch' placeholder='Enter Your Name'>
+    </div>
+    <br>
+
+    <button type="button" class="btn btn-danger" id='housesearch' onclick="findUserHouse()">Click</button>
+    <br>
+    <br>
+    <br>
+    <div class='mainInfo'>
+      <div id="divHouseInfo" class='d-none'>
+        <!-- <div class='col-4'> -->
+        <div class="card" id='houseCard'>
+          <h5 class="card-title" id='houseCardTitle'></h5>
+          <img id="houseCrest" class="card-img-top" alt="...">
+          <div class="card-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <label>Mascot:</label>
+                <label id="mascotElement"></label>
+              </li>
+              <li class="list-group-item">
+                <label>Head of House:</label>
+                <label id="headOfHouseElement"></label>
+              </li>
+              <li class="list-group-item">
+                <label>House Ghost:</label>
+                <label id="houseGhostElement"></label>
+              </li>
+              <li class="list-group-item">
+                <label>Founder:</label>
+                <label id="founderElement"></label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="divMembers">
+        <label for='search'></label>
+        <input type='text' class='form-control' id='search' placeholder=''>
+        <div class="d-none" id='divResults'>
+          <table class="table table-striped table-dark" , id='mainTable'>
+            <h1>Meet other members of your house!</h1>
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">House</th>
+                <th scope="col">Blood Status</th>
+                <th scope="col">Wand</th>
+              </tr>
+            </thead>
+            <tbody id="info">
+            </tbody>
+          </table>
+        </div>
+
+    <div class='d-none' id="divNoResults">
+      <h1>No Results Found</h1>
+    </div>
+  </div>
+  <script src="character.js"></script>
+  <script src="houseInfo.js"></script>
+  <script src="house.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

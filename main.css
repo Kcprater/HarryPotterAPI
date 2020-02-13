@@ -1,0 +1,50 @@
+body {
+  background-image:url("./assets/background3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#sortingHat {
+  width: 30%;
+  align-content: center;
+}
+
+p {
+  font: 16px; 
+  color: white;
+  font-weight: 900;
+}
+
+h4 {
+  font: 20px;
+  color: white;
+}
+
+h1 {
+  font: 50px;
+  color: white;
+}
+
+#search{
+  background-color:transparent;
+  border: none;
+  color: transparent;
+}
+
+#divHouseInfo{
+  align-content: center;
+}
+#houseCardTitle {
+  text-align: center;
+  color: white;
+}
+
+#houseCard{
+  background-color: black;
+  text-align: center;
+}
+
+.mainInfo {
+  display: flex;
+  justify-content: space-around;
+}
